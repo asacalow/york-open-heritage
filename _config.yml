@@ -1,0 +1,9 @@
+# Site settings
+title: York Open Data Map-o-tron 3000
+email: asa@megafauna.co
+#baseurl: "york.datavis.asacalow.me"
+#url: "http://yourdomain.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
