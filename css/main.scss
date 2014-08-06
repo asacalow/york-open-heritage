@@ -12,4 +12,45 @@ body {
 div#map {
   height: 100%;
   width: 100%;
+
+  .marker-info {
+    ul {
+      margin: 0;
+      padding: 0 0 0 15px;
+    }
+  }
+}
+
+.map-legend {
+  width: 240px;
+  font-size: 12px;
+
+  .legend {
+    width: 100%;
+    overflow: hidden;
+
+    .bars, .scale {
+      width: 100%;
+      .one,.two,.three,.four,.five {
+        display: block;
+        width: 20%;
+        min-height: 10px;
+        float: left;
+      }
+    }
+    .bars {
+      .one { background-color: #ddd; }
+      .two { background-color: #bbb; }
+      .three { background-color: #999; }
+      .four { background-color: #777; }
+      .five { background-color: #555; }
+    }
+    .scale {
+      .one { margin-left:10%; }
+      .one,.two,.three,.four { text-align: center; }
+    }
+    .info {
+      font-size: 12px;
+    }
+  }
 }

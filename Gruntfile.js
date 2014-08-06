@@ -26,6 +26,16 @@ module.exports = function( grunt ) {
                 dest : 'assets/main.min.css'
             }
         },
+        handlebars: {
+          compile: {
+            options: {
+              namespace: "JST"
+            },
+            files: {
+              "js/templates.js": ["hbs/lsoa-info.hbs", "hbs/listed-building.hbs"]
+            }
+          }
+        },
 
         shell : {
             jekyllBuild : {
@@ -42,10 +52,12 @@ module.exports = function( grunt ) {
                       'css/*.scss',
                       'css/libs/*.css',
                       'js/*.js',
+                      'hbs/*.hbs',
                       '_config.yml',
                       'index.haml' ],
             tasks : [ 'concat',
                       'cssmin',
+                      'handlebars',
                       'shell:jekyllServe' ],
             options : {
                 spawn : false,

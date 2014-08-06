@@ -1,3 +1,7 @@
+# require 'rubygems'
+# require 'bundler'
+# Bundler.require(:default)
+
 module Jekyll
   class HamlConverter < Converter
     safe true
