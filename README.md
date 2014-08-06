@@ -3,7 +3,7 @@ york-open-heritage
 
 Data visualisation produced as part of an AHRC funded investigation into heritage with Leeds University, York Civic Trust, MadLab and others. It can be found in the wild at http://york.asacalow.me.
 
-We have combined house price data from the UK Land Registry, and multiple deprivation index ranks from the UK Office of National Statistics' "English Indices of Deprivation 2010" dataset, alongside markers for listed buildings in York from the English Heritage's geospatial "Designation Data". For full workings, see (here)[WORKINGS.md]
+We have combined house price data from the UK Land Registry, and multiple deprivation index ranks from the UK Office of National Statistics' "English Indices of Deprivation 2010" dataset, alongside markers for listed buildings in York from the English Heritage's geospatial "Designation Data". For full workings, see [here](WORKINGS.md).
 
 ## About the data
 
@@ -11,7 +11,7 @@ The IMD ranks for England represent the most reliable indicator of household dep
 
 ## Running the visualisation locally
 
-First up, you'll need to install Ruby and Bundler, plus Node, Npm and Grunt. You can then do the following:
+The app itself is a very simple [Jekyll](http://jekyllrb.com) app, with most of the action happening in the browser via Javascript. First up, you'll need to install Ruby and Bundler, plus Node, Npm and Grunt. You can then do the following:
 
     $ npm install
     $ bundle
