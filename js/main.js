@@ -101,4 +101,6 @@ $(function() {
     }).addTo(map);
 
     map.legendControl.addLegend(document.getElementById('legend').innerHTML);
+
+    vex.dialog.alert(JST['hbs/intro.hbs']());
 });

@@ -32,7 +32,7 @@ module.exports = function( grunt ) {
               namespace: "JST"
             },
             files: {
-              "js/templates.js": ["hbs/lsoa-info.hbs", "hbs/listed-building.hbs"]
+              "js/templates.js": ["hbs/lsoa-info.hbs", "hbs/listed-building.hbs", "hbs/intro.hbs"]
             }
           }
         },

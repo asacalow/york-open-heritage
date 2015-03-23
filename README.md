@@ -1,7 +1,7 @@
 york-open-heritage
 ==================
 
-Data visualisation produced as part of an AHRC funded investigation into heritage with Leeds University, York Civic Trust, MadLab and others. It can be found in the wild at http://york.asacalow.me.
+Data visualisation produced as part of an AHRC funded investigation into heritage with Leeds University, York Civic Trust, MadLab and others. It can be found in the wild at http://york-heritage.asacalow.me.
 
 We have combined house price data from the UK Land Registry, and multiple deprivation index ranks from the UK Office of National Statistics' "English Indices of Deprivation 2010" dataset, alongside markers for listed buildings in York from the English Heritage's geospatial "Designation Data". For full workings, see [here](WORKINGS.md).
 

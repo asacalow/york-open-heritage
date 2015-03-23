@@ -4,7 +4,7 @@
 %html
   %head
     %title York Open Heritage
-    %link(rel="stylesheet" href="/css/main.css")
+    %link(rel="stylesheet" href="css/main.css")
     %script(src="//code.jquery.com/jquery-1.11.0.min.js")
     %script(src="https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.js")
     %link(rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.css")
@@ -15,6 +15,12 @@
 
     %script(src="js/templates.js");
     %script(src="js/main.js");
+
+    %link(rel="stylesheet" href="css/vex.css")
+    %link(rel="stylesheet" href="css/vex-theme-default.css")
+    %script(src="js/vex.combined.min.js");
+    :javascript
+      vex.defaultOptions.className = 'vex-theme-default';
   %body
     #map
     #legend(style="display:none;")
@@ -32,6 +38,6 @@
           %span.four 80%
         .info
           :markdown
-            House prices ordered from highest to lowest; IMD ranks ordered from least deprived to most deprived.
+            House prices ordered from highest (lightest) to lowest (darkest); IMD ranks ordered from least deprived (lightest) to most deprived (darkest).
             Data from [Open Data Communities](http://opendatacommunities.org), the [UK Land Registry](http://landregistry.data.gov.uk) and [English Heritage](http://english-heritage.org.uk).
             All code and workings for this visualisation are available on [Github](http://github.com/asacalow/york-open-heritage).
