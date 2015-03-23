@@ -18,11 +18,7 @@ House price data is based on all sales in York since August 2012 (~8k sales), wh
   2. Re-rank the IMD data locally, using imd_rerank.rb
   3. Combine house price data with the postcode-LSOA bridging data to produce a JSON file containing all house transactions for a given LSOA in the period, using house_prices_for_lsoa.rb
   4. Wrangle the house price data into a single-column .csv, then create quintiles for the data using R:
-```
-> d <- read.csv('in.csv')
-> library(dplyr)
-> quantile(d$<COLUMN NAME HERE>, probs=seq(0.2,0.8,0.2))
-```
+M
   5. Convert the IMD shapefile into geojson and combine it with the generated house price JSON data and new IMD ranks, using imd_to_geojson.rb
 
 ## Obtaining the relevant data
